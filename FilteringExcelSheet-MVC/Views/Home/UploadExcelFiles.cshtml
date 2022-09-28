@@ -1,0 +1,80 @@
+﻿<div class="row">
+
+    <div class="col-md-12">
+
+        <form asp-action="ReadExcelFile" asp-controller="Firm" method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+
+                <label class="col-form-label-lg">Upload Firm Excelsheet file</label>
+
+                <input id="FirmExcelFile" name="FirmExcelFile" class="form-control" type="file"/>
+
+                <button type="submit" class="btn btn-success"  style="margin:10px;"> Upload Excel File & show in table individually  </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<br />
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <form asp-action="ReadExcelFile" asp-controller="Asset" method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+
+                <label class="col-form-label-lg">Upload Asset Excelsheet file</label>
+
+                <input id="AssetExcelFile" name="AssetExcelFile" class="form-control" type="file"/>
+
+                <button type="submit" class="btn btn-success"  style="margin:10px;"> Upload Excel File & show in table individually </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<hr />
+
+<br />
+
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <form asp-action="ReadExcelFiles" asp-controller="Home" method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+
+
+                <label class="col-form-label-lg">Upload Asset Excelsheet file</label>
+
+                <input id="AssetExcelFile" name="AssetExcelFile" class="form-control" type="file"/>
+
+
+                <label class="col-form-label-lg">Upload Firm Excelsheet file</label>
+
+                <input id="FirmExcelFile" name="FirmExcelFile" class="form-control" type="file"/>
+
+                <button type="submit" class="btn btn-success"  style="margin:10px;"> Upload Excel Files </button>
+
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

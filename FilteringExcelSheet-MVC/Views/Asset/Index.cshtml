@@ -1,0 +1,36 @@
+﻿@model List<FilteringExcelSheet_MVC.Models.Asset>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Asset Class Id</th>
+              <th scope="col">Asset Class Name</th>
+              <th scope="col">Interested Firms (ID)</th>
+            </tr>
+          </thead>
+          <tbody>
+
+
+                    @foreach (var item in Model)
+                    {
+
+                            <tr>
+                                    <td>@item.Asset_Class_Id </td>
+                                    <td>@item.Asset_Class_Name</td> 
+                                    <td>@item.Firms_Id</td>
+                            </tr>
+                    }
+
+            
+          </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+

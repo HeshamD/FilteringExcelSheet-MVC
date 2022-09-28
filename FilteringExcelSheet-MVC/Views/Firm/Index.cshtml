@@ -1,0 +1,31 @@
+﻿@model List<FilteringExcelSheet_MVC.Models.Firm>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+
+          <thead class="thead-dark">
+            <tr> 
+                               <th> Firm Id </th>
+                               <th> Firm Name </th>
+            </tr>
+          </thead>
+          <tbody>
+
+
+                @foreach (var item in Model)
+                {
+
+                            <tr>
+                                    <td>@item.Firm_Id </td>
+                                    <td>@item.Firm_Name</td> 
+                            </tr>
+                }
+
+
+          </tbody>
+        </table>
+
+    </div>
+</div>
